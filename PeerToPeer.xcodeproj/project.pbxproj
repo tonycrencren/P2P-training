@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58603482BC3CB98BFD397C12 /* ARAdvertiserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5860376566067E62C7CF3511 /* ARAdvertiserController.m */; };
 		586037236E4487E211ADAB46 /* TemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58603FA397CC55D2CCECC9F0 /* TemplateView.xib */; };
 		58603E8D1F58398155672081 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58603D168766B4A59DD8B2C4 /* iPhoneStoryboard.storyboard */; };
 		840FB1E518EA590400A3DBF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840FB1E418EA590400A3DBF5 /* Foundation.framework */; };
@@ -21,6 +22,7 @@
 		840FB20018EA590400A3DBF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840FB1E818EA590400A3DBF5 /* UIKit.framework */; };
 		840FB20818EA590400A3DBF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 840FB20618EA590400A3DBF5 /* InfoPlist.strings */; };
 		840FB20A18EA590400A3DBF5 /* PeerToPeerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840FB20918EA590400A3DBF5 /* PeerToPeerTests.m */; };
+		84D8B4E518EA6DD8005D6E8E /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5860376566067E62C7CF3511 /* ARAdvertiserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAdvertiserController.m; sourceTree = "<group>"; };
+		5860379E6EF6F11C24C266AC /* ARAdvertiserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAdvertiserController.h; sourceTree = "<group>"; };
 		58603D168766B4A59DD8B2C4 /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		58603FA397CC55D2CCECC9F0 /* TemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemplateView.xib; sourceTree = "<group>"; };
 		840FB1E118EA590400A3DBF5 /* PeerToPeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeerToPeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +56,7 @@
 		840FB20518EA590400A3DBF5 /* PeerToPeerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeerToPeerTests-Info.plist"; sourceTree = "<group>"; };
 		840FB20718EA590400A3DBF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		840FB20918EA590400A3DBF5 /* PeerToPeerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerToPeerTests.m; sourceTree = "<group>"; };
+		84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D8B4E518EA6DD8005D6E8E /* MultipeerConnectivity.framework in Frameworks */,
 				840FB1E718EA590400A3DBF5 /* CoreGraphics.framework in Frameworks */,
 				840FB1E918EA590400A3DBF5 /* UIKit.framework in Frameworks */,
 				840FB1E518EA590400A3DBF5 /* Foundation.framework in Frameworks */,
@@ -93,6 +99,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		586036DB732528455492AD68 /* Advertiser */ = {
+			isa = PBXGroup;
+			children = (
+				5860376566067E62C7CF3511 /* ARAdvertiserController.m */,
+				5860379E6EF6F11C24C266AC /* ARAdvertiserController.h */,
+			);
+			path = Advertiser;
+			sourceTree = "<group>";
+		};
 		5860392E7B4854F5674C7624 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +133,7 @@
 		58603F7D25C25D8808DD06F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				586036DB732528455492AD68 /* Advertiser */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +160,7 @@
 		840FB1E318EA590400A3DBF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */,
 				840FB1E418EA590400A3DBF5 /* Foundation.framework */,
 				840FB1E618EA590400A3DBF5 /* CoreGraphics.framework */,
 				840FB1E818EA590400A3DBF5 /* UIKit.framework */,
@@ -246,6 +263,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Huy Le";
 				TargetAttributes = {
+					840FB1E018EA590400A3DBF5 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
 					840FB1FB18EA590400A3DBF5 = {
 						TestTargetID = 840FB1E018EA590400A3DBF5;
 					};
@@ -298,6 +322,7 @@
 			files = (
 				840FB1F118EA590400A3DBF5 /* main.m in Sources */,
 				840FB1F518EA590400A3DBF5 /* ARAppDelegate.m in Sources */,
+				58603482BC3CB98BFD397C12 /* ARAdvertiserController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +519,7 @@
 				840FB20F18EA590400A3DBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		840FB21018EA590400A3DBF5 /* Build configuration list for PBXNativeTarget "PeerToPeerTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +528,7 @@
 				840FB21218EA590400A3DBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
