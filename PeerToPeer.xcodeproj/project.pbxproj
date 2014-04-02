@@ -22,6 +22,10 @@
 		840FB20018EA590400A3DBF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840FB1E818EA590400A3DBF5 /* UIKit.framework */; };
 		840FB20818EA590400A3DBF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 840FB20618EA590400A3DBF5 /* InfoPlist.strings */; };
 		840FB20A18EA590400A3DBF5 /* PeerToPeerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840FB20918EA590400A3DBF5 /* PeerToPeerTests.m */; };
+		84B0F3DE18EBBFB90011F04A /* ARMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3DD18EBBFB90011F04A /* ARMessageViewController.m */; };
+		84B0F3E218EBC0450011F04A /* ARAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3E118EBC0450011F04A /* ARAdvertiser.m */; };
+		84B0F3E918EBC4220011F04A /* ARSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3E818EBC4220011F04A /* ARSession.m */; };
+		84B0F3EC18EBCFB50011F04A /* ARBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3EB18EBCFB50011F04A /* ARBrowser.m */; };
 		84D8B4E518EA6DD8005D6E8E /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,14 @@
 		840FB20518EA590400A3DBF5 /* PeerToPeerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeerToPeerTests-Info.plist"; sourceTree = "<group>"; };
 		840FB20718EA590400A3DBF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		840FB20918EA590400A3DBF5 /* PeerToPeerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerToPeerTests.m; sourceTree = "<group>"; };
+		84B0F3DC18EBBFB90011F04A /* ARMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMessageViewController.h; sourceTree = "<group>"; };
+		84B0F3DD18EBBFB90011F04A /* ARMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMessageViewController.m; sourceTree = "<group>"; };
+		84B0F3E018EBC0450011F04A /* ARAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARAdvertiser.h; path = ViewModels/ARAdvertiser.h; sourceTree = "<group>"; };
+		84B0F3E118EBC0450011F04A /* ARAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARAdvertiser.m; path = ViewModels/ARAdvertiser.m; sourceTree = "<group>"; };
+		84B0F3E718EBC4220011F04A /* ARSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARSession.h; path = ViewModels/ARSession.h; sourceTree = "<group>"; };
+		84B0F3E818EBC4220011F04A /* ARSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARSession.m; path = ViewModels/ARSession.m; sourceTree = "<group>"; };
+		84B0F3EA18EBCFB50011F04A /* ARBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARBrowser.h; path = ViewModels/ARBrowser.h; sourceTree = "<group>"; };
+		84B0F3EB18EBCFB50011F04A /* ARBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARBrowser.m; path = ViewModels/ARBrowser.m; sourceTree = "<group>"; };
 		84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -102,8 +114,8 @@
 		586036DB732528455492AD68 /* Advertiser */ = {
 			isa = PBXGroup;
 			children = (
-				5860376566067E62C7CF3511 /* ARAdvertiserController.m */,
 				5860379E6EF6F11C24C266AC /* ARAdvertiserController.h */,
+				5860376566067E62C7CF3511 /* ARAdvertiserController.m */,
 			);
 			path = Advertiser;
 			sourceTree = "<group>";
@@ -133,6 +145,7 @@
 		58603F7D25C25D8808DD06F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84B0F3DB18EBBF9A0011F04A /* Message */,
 				586036DB732528455492AD68 /* Advertiser */,
 			);
 			path = Controllers;
@@ -178,6 +191,7 @@
 				840FB1EB18EA590400A3DBF5 /* Supporting Files */,
 				5860392E7B4854F5674C7624 /* Storyboards */,
 				58603F7D25C25D8808DD06F8 /* Controllers */,
+				84B0F3DF18EBC01E0011F04A /* ViewModels */,
 				5860396835DC98C934934A03 /* Managers */,
 				58603CBC5E42553FB72C6737 /* Categories */,
 				586035371012F20E08D3E194 /* Views */,
@@ -213,6 +227,28 @@
 				840FB20618EA590400A3DBF5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B0F3DB18EBBF9A0011F04A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				84B0F3DC18EBBFB90011F04A /* ARMessageViewController.h */,
+				84B0F3DD18EBBFB90011F04A /* ARMessageViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		84B0F3DF18EBC01E0011F04A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84B0F3E018EBC0450011F04A /* ARAdvertiser.h */,
+				84B0F3E118EBC0450011F04A /* ARAdvertiser.m */,
+				84B0F3E718EBC4220011F04A /* ARSession.h */,
+				84B0F3E818EBC4220011F04A /* ARSession.m */,
+				84B0F3EA18EBCFB50011F04A /* ARBrowser.h */,
+				84B0F3EB18EBCFB50011F04A /* ARBrowser.m */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +359,10 @@
 				840FB1F118EA590400A3DBF5 /* main.m in Sources */,
 				840FB1F518EA590400A3DBF5 /* ARAppDelegate.m in Sources */,
 				58603482BC3CB98BFD397C12 /* ARAdvertiserController.m in Sources */,
+				84B0F3E218EBC0450011F04A /* ARAdvertiser.m in Sources */,
+				84B0F3EC18EBCFB50011F04A /* ARBrowser.m in Sources */,
+				84B0F3DE18EBBFB90011F04A /* ARMessageViewController.m in Sources */,
+				84B0F3E918EBC4220011F04A /* ARSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

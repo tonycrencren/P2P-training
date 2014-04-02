@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 
-@interface ARAdvertiserController : UIViewController <MCNearbyServiceAdvertiserDelegate, MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCBrowserViewControllerDelegate>
+@interface ARAdvertiserController : UIViewController <MCNearbyServiceAdvertiserDelegate, MCSessionDelegate, MCBrowserViewControllerDelegate>
 
 @property(nonatomic, strong) MCNearbyServiceAdvertiser *advertiser;
 @property(nonatomic, strong) MCSession *session;
