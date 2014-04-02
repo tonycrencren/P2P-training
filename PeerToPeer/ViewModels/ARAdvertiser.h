@@ -14,6 +14,7 @@
 @property(strong,nonatomic) MCNearbyServiceAdvertiser *advertiser;
 @property(strong,nonatomic) MCPeerID *peerID;
 @property(copy,nonatomic) NSString *displayName;
+@property(weak,nonatomic) MCSession *session;
 
 - (instancetype)initWithPeerID:(MCPeerID *)peerID;
 - (void)stopAdvertiser:(BOOL)isStop;

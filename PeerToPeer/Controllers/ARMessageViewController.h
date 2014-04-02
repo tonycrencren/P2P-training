@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "ARAdvertiser.h"
 #import "ARSession.h"
+#import "AudioProcessor.h"
 
 static NSString * const serviceName = @"Ares-Message";
 
-@interface ARMessageViewController : UITableViewController <MCBrowserViewControllerDelegate, UITableViewDataSource>
+@interface ARMessageViewController : UIViewController <MCBrowserViewControllerDelegate>
 
 @property(strong,nonatomic) ARAdvertiser *advertiser;
 @property(strong,nonatomic) ARSession *sessionModel;
 @property(strong,nonatomic) MCPeerID *peerID;
+
 
 @end

@@ -28,6 +28,7 @@
     }
     
     self.advertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:self.peerID discoveryInfo:nil serviceType:@"Ares-Message"];
+    self.advertiser.delegate = self;
     [self.advertiser startAdvertisingPeer];
 }
 
@@ -39,6 +40,15 @@
         [self.advertiser startAdvertisingPeer];
     }
 }
+
+#pragma mark - MCNearbyServiceAdvertiserDelegate
+
+- (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL, MCSession *))invitationHandler {
+    
+    [[[UIAlertView alloc] initWithTitle:@"Welcome!" message:@"Welcome aboard!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    invitationHandler(YES, self.session);
+}
+
 
 
 @end

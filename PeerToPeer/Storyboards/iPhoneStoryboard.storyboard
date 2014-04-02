@@ -34,41 +34,6 @@
             </objects>
             <point key="canvasLocation" x="25" y="113"/>
         </scene>
-        <!--Message View Controller - Ares Messager-->
-        <scene sceneID="0Cz-On-b68">
-            <objects>
-                <tableViewController id="4bG-12-sZf" customClass="ARMessageViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XEe-RL-ocQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="NZh-xR-L8E">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NZh-xR-L8E" id="bdi-Lh-2Kj">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="4bG-12-sZf" id="NLs-WJ-JIO"/>
-                            <outlet property="delegate" destination="4bG-12-sZf" id="yF5-32-uOD"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Ares Messager" id="TqY-vJ-z4L">
-                        <barButtonItem key="leftBarButtonItem" title="Find peer" id="bbS-Tk-xLD">
-                            <connections>
-                                <action selector="discoverPeer:" destination="4bG-12-sZf" id="dBJ-3d-Ujb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xCq-Xx-C20" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="992" y="113"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tX3-HN-Ww2">
             <objects>
@@ -77,12 +42,37 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4bG-12-sZf" kind="relationship" relationship="rootViewController" id="W75-da-Wjl"/>
+                        <segue destination="ddq-zO-xEf" kind="relationship" relationship="rootViewController" id="1y5-0K-8AE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAR-5h-PSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="458" y="113"/>
+        </scene>
+        <!--Message View Controller - Message-->
+        <scene sceneID="8x0-fI-Nny">
+            <objects>
+                <viewController id="ddq-zO-xEf" customClass="ARMessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M8S-Gy-b6O"/>
+                        <viewControllerLayoutGuide type="bottom" id="r50-h8-qQc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mti-Am-Uc6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Message" id="aed-OC-ukZ">
+                        <barButtonItem key="leftBarButtonItem" title="Find peer" id="bFx-dh-ONI">
+                            <connections>
+                                <action selector="discoverPeer:" destination="ddq-zO-xEf" id="Qr2-Zs-Ugt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMI-cy-hzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="113"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

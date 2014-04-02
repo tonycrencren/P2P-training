@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 
-@interface ARSession : NSObject
+@interface ARSession : NSObject <MCSessionDelegate, NSStreamDelegate>
 
 @property(strong,nonatomic) MCSession *session;
 

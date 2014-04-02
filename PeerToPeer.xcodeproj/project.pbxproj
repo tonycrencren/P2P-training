@@ -26,6 +26,10 @@
 		84B0F3E218EBC0450011F04A /* ARAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3E118EBC0450011F04A /* ARAdvertiser.m */; };
 		84B0F3E918EBC4220011F04A /* ARSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3E818EBC4220011F04A /* ARSession.m */; };
 		84B0F3EC18EBCFB50011F04A /* ARBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3EB18EBCFB50011F04A /* ARBrowser.m */; };
+		84B0F3F618EBF4F80011F04A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B0F3F518EBF4F80011F04A /* AVFoundation.framework */; };
+		84B0F3F918EBF54A0011F04A /* ARVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3F818EBF54A0011F04A /* ARVoice.m */; };
+		84B0F3FC18EC08C80011F04A /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0F3FB18EC08C80011F04A /* AudioProcessor.m */; };
+		84B0F40018EC0A1A0011F04A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B0F3FF18EC0A1A0011F04A /* AudioToolbox.framework */; };
 		84D8B4E518EA6DD8005D6E8E /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,15 @@
 		84B0F3E818EBC4220011F04A /* ARSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARSession.m; path = ViewModels/ARSession.m; sourceTree = "<group>"; };
 		84B0F3EA18EBCFB50011F04A /* ARBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARBrowser.h; path = ViewModels/ARBrowser.h; sourceTree = "<group>"; };
 		84B0F3EB18EBCFB50011F04A /* ARBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARBrowser.m; path = ViewModels/ARBrowser.m; sourceTree = "<group>"; };
+		84B0F3EF18EBF12F0011F04A /* MessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
+		84B0F3F018EBF12F0011F04A /* MessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
+		84B0F3F218EBF4CE0011F04A /* PeerToPeer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PeerToPeer.entitlements; sourceTree = "<group>"; };
+		84B0F3F518EBF4F80011F04A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		84B0F3F718EBF54A0011F04A /* ARVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARVoice.h; path = ViewModels/ARVoice.h; sourceTree = "<group>"; };
+		84B0F3F818EBF54A0011F04A /* ARVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARVoice.m; path = ViewModels/ARVoice.m; sourceTree = "<group>"; };
+		84B0F3FA18EC08C80011F04A /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
+		84B0F3FB18EC08C80011F04A /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
+		84B0F3FF18EC0A1A0011F04A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -76,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B0F40018EC0A1A0011F04A /* AudioToolbox.framework in Frameworks */,
+				84B0F3F618EBF4F80011F04A /* AVFoundation.framework in Frameworks */,
 				84D8B4E518EA6DD8005D6E8E /* MultipeerConnectivity.framework in Frameworks */,
 				840FB1E718EA590400A3DBF5 /* CoreGraphics.framework in Frameworks */,
 				840FB1E918EA590400A3DBF5 /* UIKit.framework in Frameworks */,
@@ -173,6 +188,8 @@
 		840FB1E318EA590400A3DBF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84B0F3FF18EC0A1A0011F04A /* AudioToolbox.framework */,
+				84B0F3F518EBF4F80011F04A /* AVFoundation.framework */,
 				84D8B4E418EA6DD8005D6E8E /* MultipeerConnectivity.framework */,
 				840FB1E418EA590400A3DBF5 /* Foundation.framework */,
 				840FB1E618EA590400A3DBF5 /* CoreGraphics.framework */,
@@ -185,6 +202,8 @@
 		840FB1EA18EA590400A3DBF5 /* PeerToPeer */ = {
 			isa = PBXGroup;
 			children = (
+				84B0F3F218EBF4CE0011F04A /* PeerToPeer.entitlements */,
+				84B0F3ED18EBF1030011F04A /* Views */,
 				840FB1F318EA590400A3DBF5 /* ARAppDelegate.h */,
 				840FB1F418EA590400A3DBF5 /* ARAppDelegate.m */,
 				840FB1F618EA590400A3DBF5 /* Images.xcassets */,
@@ -241,14 +260,35 @@
 		84B0F3DF18EBC01E0011F04A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				84B0F3FA18EC08C80011F04A /* AudioProcessor.h */,
+				84B0F3FB18EC08C80011F04A /* AudioProcessor.m */,
 				84B0F3E018EBC0450011F04A /* ARAdvertiser.h */,
 				84B0F3E118EBC0450011F04A /* ARAdvertiser.m */,
 				84B0F3E718EBC4220011F04A /* ARSession.h */,
 				84B0F3E818EBC4220011F04A /* ARSession.m */,
 				84B0F3EA18EBCFB50011F04A /* ARBrowser.h */,
 				84B0F3EB18EBCFB50011F04A /* ARBrowser.m */,
+				84B0F3F718EBF54A0011F04A /* ARVoice.h */,
+				84B0F3F818EBF54A0011F04A /* ARVoice.m */,
 			);
 			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		84B0F3ED18EBF1030011F04A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84B0F3EE18EBF1090011F04A /* MessageView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84B0F3EE18EBF1090011F04A /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				84B0F3EF18EBF12F0011F04A /* MessageView.h */,
+				84B0F3F018EBF12F0011F04A /* MessageView.m */,
+			);
+			name = MessageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +340,12 @@
 				ORGANIZATIONNAME = "Huy Le";
 				TargetAttributes = {
 					840FB1E018EA590400A3DBF5 = {
+						DevelopmentTeam = 8P8UGV8V2N;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
 								enabled = 0;
 							};
 						};
@@ -356,11 +400,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B0F3FC18EC08C80011F04A /* AudioProcessor.m in Sources */,
 				840FB1F118EA590400A3DBF5 /* main.m in Sources */,
 				840FB1F518EA590400A3DBF5 /* ARAppDelegate.m in Sources */,
 				58603482BC3CB98BFD397C12 /* ARAdvertiserController.m in Sources */,
 				84B0F3E218EBC0450011F04A /* ARAdvertiser.m in Sources */,
 				84B0F3EC18EBCFB50011F04A /* ARBrowser.m in Sources */,
+				84B0F3F918EBF54A0011F04A /* ARVoice.m in Sources */,
 				84B0F3DE18EBBFB90011F04A /* ARMessageViewController.m in Sources */,
 				84B0F3E918EBC4220011F04A /* ARSession.m in Sources */,
 			);
@@ -479,10 +525,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeerToPeer/PeerToPeer-Prefix.pch";
 				INFOPLIST_FILE = "PeerToPeer/PeerToPeer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -492,10 +541,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PeerToPeer/PeerToPeer-Prefix.pch";
 				INFOPLIST_FILE = "PeerToPeer/PeerToPeer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -10,6 +10,8 @@
 
 @interface ARMessageViewController ()
 
+@property(strong,nonatomic) AudioProcessor *audioProcessor;
+
 @end
 
 @implementation ARMessageViewController
@@ -33,6 +35,17 @@
     self.sessionModel = [[ARSession alloc] initWithPeerId:self.peerID];
     
     self.advertiser = [[ARAdvertiser alloc] initWithPeerID:self.peerID];
+    self.advertiser.session = self.sessionModel.session;
+    
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    if (self.audioProcessor == nil) {
+        self.audioProcessor = [[AudioProcessor alloc] init];
+    }
+    [self.audioProcessor start];
 }
 
 - (void)didReceiveMemoryWarning
